@@ -6,7 +6,8 @@ import {
   FileText, 
   BarChart3,
   Settings,
-  Users
+  Users,
+  BookOpen
 } from 'lucide-react';
 
 interface SidebarProps {
@@ -22,6 +23,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activeSection, onSectionChange }) => 
     { id: 'reports', label: 'Relatórios', icon: FileText },
     { id: 'analytics', label: 'Indicadores', icon: BarChart3 },
     { id: 'users', label: 'Usuários', icon: Users },
+    { id: 'pops', label: 'POPs e Manuais', icon: BookOpen },
     { id: 'settings', label: 'Configurações', icon: Settings },
   ];
 

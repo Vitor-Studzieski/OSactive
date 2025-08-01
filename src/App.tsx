@@ -9,6 +9,7 @@ import Reports from './components/Reports/Reports';
 import Analytics from './components/Analytics/Analytics';
 import Users from './components/Users/Users';
 import Settings from './components/Settings/Settings';
+import POPs from './components/POPs/POPs';
 
 function App() {
   const { user, loading } = useAuth();
@@ -87,6 +88,8 @@ function App() {
         return <Analytics />;
       case 'users':
         return <Users />;
+      case 'pops':
+        return <POPs />;
       case 'settings':
         return <Settings />;
       default:
